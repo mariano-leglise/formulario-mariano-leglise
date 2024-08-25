@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion de Materias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Formulario de Inscripcion de Materias</h2>
+        <form id="formularioInscripcion">
+            <div class="campo-formulario">
+                <label for="nombreCompleto">Nombre Completo:</label>
+                <input type="text" id="nombreCompleto" name="nombreCompleto" placeholder="Ingresa tu nombre" required>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" placeholder="Ingresa tu DNI" required>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="materia">Materia a Inscribirse:</label>
+                <select id="materia" name="materia" required>
+                    <option value="frontend">Programacion Frontend</option>
+                    <option value="backend">Programacion Backend</option>
+                    <option value="software">Desarrollo de Software</option>
+                    <option value="practicas">Prácticas Profesionalizantes</option>
+                    <option value="integracion">Integracion de Aplicaciones</option>
+                    <option value="fullstack">Laboratorio Full Stack</option>
+                </select>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="comentarios">Comentarios Adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="5" placeholder="Deja un comentario..." required></textarea>
+            </div>
+
+            <div class="campo-formulario">
+                <button type="button" onclick="enviarFormulario()">Inscribirse</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
